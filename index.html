@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Integrated Estate Planning for Divorcees and Blended Families — The Olivet Circle, Singapore.">
+  <title>The Olivet Circle | Estate Planning | Singapore</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">The Olivet <span>Circle</span></a>
+
+  <!-- Desktop links -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#carol">Our Practitioner</a></li>
+    <li><a href="#enquiry">Enquire</a></li>
+    <li><a href="#appointment" class="nav-cta">Book Appointment</a></li>
+  </ul>
+
+  <!-- Hamburger (mobile only) -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile slide-in menu -->
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
+  <a href="#about"       class="mobile-nav-link">About</a>
+  <a href="#services"    class="mobile-nav-link">Services</a>
+  <a href="#carol"       class="mobile-nav-link">Our Practitioner</a>
+  <a href="#enquiry"     class="mobile-nav-link">Enquire</a>
+  <a href="#appointment" class="mobile-nav-link cta">Book Appointment</a>
+</div>
+
+
+<!-- ============================================================
+     WHATSAPP FLOATING BUTTON
+     Your number is set in js/main.js → SETTINGS.whatsappNumber
+============================================================ -->
+<div class="whatsapp-float">
+  <span class="wa-tooltip" id="wa-tooltip">Chat with us</span>
+  <a id="whatsapp-btn" href="#" target="_blank" rel="noopener">
+    <!-- WhatsApp SVG icon -->
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15
+               -.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075
+               -.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059
+               -.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52
+               .149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52
+               -.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51
+               -.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372
+               -.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074
+               .149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625
+               .712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413
+               .248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.057 23.5
+               l5.783-1.517A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z
+               m0 21.818a9.79 9.79 0 01-4.967-1.352l-.357-.212-3.433.9.916-3.348
+               -.232-.372A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182
+               S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+  </a>
+</div>
+
+
+<!-- ============================================================
+     HERO
+     Background photo: see SETTINGS comment in css/styles.css
+============================================================ -->
+<section class="hero">
+  <div class="hero-bg-text" aria-hidden="true"></div>
+  <div class="hero-eyebrow">Estate Planning · Singapore</div>
+  <h1>The <em>missing piece</em><br>in your financial story.</h1>
+  <p>At The Olivet Circle, we go beyond wealth creation — we help families
+     safeguard what matters most, ensuring clarity, care, and continuity
+     across generations.</p>
+  <div class="hero-btns">
+    <a href="#enquiry"  class="btn-primary">Begin Your Journey</a>
+    <a href="#services" class="btn-outline">Our Services</a>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section class="about" id="about">
+  <div class="max-w">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">Bridging the gap in <em>every</em> financial plan.</h2>
+        <p class="section-body">Many believe their financial planning is complete once insurance
+           and investments are in place. But without estate planning, families face disputes,
+           delays, and leakages that could have been avoided.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <h4>Bridging the Gap</h4>
+            <p>We provide clarity where traditional financial planning ends — ensuring your
+               wishes are honored and your legacy is preserved.</p>
+          </div>
+          <div class="pillar">
+            <h4>What Matters to You, Matters to Us</h4>
+            <p>Our role is to ensure your instructions are carried out faithfully, creating a
+               legacy that lasts for generations.</p>
+          </div>
+          <div class="pillar">
+            <h4>The Meaning Behind Our Name</h4>
+            <p>The olive tree — a symbol of resilience, peace, and enduring legacy. Just as it
+               stands the test of time, your plans should protect for generations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-quote">
+          "Financial clarity that safeguards families today, and for the generations ahead."
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Years of Practice</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Trust Structures</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Tailored Planning</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Generational Impact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     OLIVE TREE
+============================================================ -->
+<section class="olive-tree">
+  <div class="max-w">
+    <div class="section-label">Our Symbol</div>
+    <h2 class="section-title">The Olive Tree —<br><em>nature's lesson in legacy.</em></h2>
+    <p class="section-body">Cultivated for over 6,000 years, the olive tree is humanity's most
+       enduring partner. Each quality mirrors the values we bring to your estate planning.</p>
+    <div class="olive-tree-grid">
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">I</span>
+        <h4>Longevity</h4>
+        <p>Some olive trees live over 2,000 years. Thoughtful estate planning, like their roots,
+           endures across generations.</p>
+      </div>
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">II</span>
+        <h4>Indestructible</h4>
+        <p>Even after frost, fire, or disease, olive trees regenerate. Families can thrive with
+           clarity after life's hardships.</p>
+      </div>
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">III</span>
+        <h4>Prolific</h4>
+        <p>Bearing fruit year after year. A well-structured legacy continues to provide,
+           generation after generation.</p>
+      </div>
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">IV</span>
+        <h4>Drought-Defying</h4>
+        <p>Olive trees flourish even in scarcity. Good planning brings stability through life's
+           dry seasons.</p>
+      </div>
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">V</span>
+        <h4>Generous</h4>
+        <p>A single tree yields hundreds of pounds of fruit — echoing how thoughtful stewardship
+           multiplies blessings for many.</p>
+      </div>
+      <div class="tree-card">
+        <span class="tree-card-icon" aria-hidden="true">VI</span>
+        <h4>Sacred</h4>
+        <p>A timeless symbol of peace, wisdom, and abundance — values that guide The Olivet
+           Circle's mission today.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHO NEEDS ESTATE PLANNING
+============================================================ -->
+<section class="who-needs" id="who">
+  <div class="max-w">
+    <div class="section-label">Who It's For</div>
+    <h2 class="section-title" style="color:var(--warm-white)">
+      Estate planning is for<br>
+      <em style="color:var(--olive-pale)">anyone with loved ones</em><br>
+      to protect.
+    </h2>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">01</span>
+        <h4>Parents</h4>
+        <p>Ensure guardianship, education funding, and care are clearly secured for your children.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">02</span>
+        <h4>Working Adults</h4>
+        <p>Ensure your CPF, insurance, and savings go to the right people — even early in your career.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">03</span>
+        <h4>Homeowners</h4>
+        <p>Property is often your biggest asset. Proper planning avoids costly legal entanglements.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">04</span>
+        <h4>Business Owners</h4>
+        <p>Ensure your business transitions smoothly and continues without disruption.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">05</span>
+        <h4>Divorcees</h4>
+        <p>Protect children's provisions and rebuild your financial foundation post-transition.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-num" aria-hidden="true">06</span>
+        <h4>Caregivers</h4>
+        <p>If you support aging parents or loved ones, estate planning ensures continuity of care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section class="services" id="services">
+  <div class="max-w">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">A complete circle<br>of <em>protection and clarity.</em></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-tag">Wills &amp; Trusts</span>
+        <h3>Comprehensive Will-Writing Services</h3>
+        <p>Every detail carefully handled, so you can rest with confidence that your wishes will be honored.</p>
+        <ul class="service-list">
+          <li>In-house legal advisors reviewing all Wills</li>
+          <li>Secure Will custody and confidential retrieval</li>
+          <li>Neutral trustee services for impartiality</li>
+          <li>Guardianship provisions for children</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">Legal Planning</span>
+        <h3>Lasting Power of Attorney Advisory</h3>
+        <p>Appoint trusted voices to speak for you when you cannot speak for yourself.</p>
+        <ul class="service-list">
+          <li>Appoint donees for mental incapacity decisions</li>
+          <li>Guidance on choosing the right roles</li>
+          <li>Partnership with doctors and lawyers</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">Business Continuity</span>
+        <h3>Family Business &amp; Succession Planning</h3>
+        <p>Protect your business legacy and ensure continuity for the next generation.</p>
+        <ul class="service-list">
+          <li>Succession strategies for family-owned businesses</li>
+          <li>Ringfencing business assets</li>
+          <li>Integration with corporate secretaries and legal counsel</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">Wealth Structures</span>
+        <h3>Trust Services</h3>
+        <p>One of the most powerful ways to protect and pass on wealth smoothly across generations.</p>
+        <ul class="service-list">
+          <li>Family, Standby &amp; Charitable Trusts</li>
+          <li>Business Succession &amp; Testamentary Trusts</li>
+          <li>Specialised cross-border structures</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">Life Transitions</span>
+        <h3>Estate Planning for Divorcees</h3>
+        <p>Rebuild your financial foundation and secure your children's future after life changes.</p>
+        <ul class="service-list">
+          <li>Re-align Wills, trusts, and CPF nominations</li>
+          <li>Safeguard provisions for children</li>
+          <li>Secure financial independence for your next stage</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">Premium</span>
+        <h3>Private Wealth &amp; Family Office Services</h3>
+        <p>For high-net-worth families preserving, growing, and transferring assets with confidence.</p>
+        <ul class="service-list">
+          <li>Advanced estate &amp; trust structuring</li>
+          <li>Tax optimisation strategies</li>
+          <li>Family governance &amp; continuity</li>
+          <li>Philanthropy &amp; legacy planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INTEGRATED PARTNERSHIPS
+============================================================ -->
+<section class="integrated">
+  <div class="max-w">
+    <div class="integrated-inner">
+      <div>
+        <div class="section-label">Our Network</div>
+        <h2 class="section-title">A circle is whole only when every part is <em>connected.</em></h2>
+        <p class="section-body">We bring together trusted professionals from every field — so no
+           piece of your wealth plan is left out.</p>
+        <div class="integrated-partners">
+          <span class="partner-pill">Trustees</span>
+          <span class="partner-pill">Family Offices</span>
+          <span class="partner-pill">Lawyers</span>
+          <span class="partner-pill">Accountants</span>
+          <span class="partner-pill">Real Estate Experts</span>
+          <span class="partner-pill">Medical Professionals</span>
+          <span class="partner-pill">Counsellors</span>
+          <span class="partner-pill">Corporate Secretaries</span>
+        </div>
+      </div>
+      <div class="result-list">
+        <div class="result-item">
+          <span class="result-word">Comprehensive</span>
+          <span class="result-desc">Every angle of your wealth addressed — no gaps, no blind spots.</span>
+        </div>
+        <div class="result-item">
+          <span class="result-word">Coordinated</span>
+          <span class="result-desc">All professionals aligned to one strategy, with The Olivet Circle as your point of clarity.</span>
+        </div>
+        <div class="result-item">
+          <span class="result-word">Continuous</span>
+          <span class="result-desc">Designed not just for today, but to endure and adapt for generations to come.</span>
+        </div>
+        <div class="result-item">
+          <span class="result-word">Confidential</span>
+          <span class="result-desc">Your plans, your legacy — handled with the utmost discretion and integrity.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT CAROL
+     PHOTO: Displaying the practitioner photo directly in the section.
+============================================================ -->
+<section class="about-carol" id="carol">
+  <div class="max-w">
+    <div class="carol-grid">
+      <div class="carol-photo-wrap">
+        <img src="images/carol.png" alt="Carol Chin, Principal Consultant" class="carol-photo">
+      </div>
+      <div>
+        <div class="section-label">Our Practitioner</div>
+        <h2 class="section-title">Carol Chin</h2>
+        <div class="carol-creds">
+          <span class="cred-badge">ChFC</span>
+          <span class="cred-badge">Estate &amp; Succession Practitioner</span>
+          <span class="cred-badge">Certified NLP Practitioner</span>
+          <span class="cred-badge">10+ Years Experience</span>
+        </div>
+        <p class="section-body">Carol Chin is the Principal Consultant at The Olivet Circle —
+           specialising in guiding women and families through complex life transitions with
+           clarity and confidence.</p>
+        <p class="section-body mt-sm">Her decade-long career in financial planning is informed by
+           personal experience, which underscores her strong advocacy for protecting families
+           during vulnerable times.</p>
+        <p class="section-body mt-sm">Whether assisting women in post-divorce financial
+           restructuring or advising families on succession planning, Carol is committed to
+           strengthening stability and ensuring thoughtful legacy provision.</p>
+        <div class="carol-principle">
+          "Financial clarity that safeguards families today, and for the generations ahead."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ENQUIRY SECTION
+     Connected to Formspree — set your ID in js/main.js SETTINGS
+============================================================ -->
+<section class="enquiry" id="enquiry">
+  <div class="max-w">
+    <div class="enquiry-inner">
+      <!-- Left: intro -->
+      <div class="enquiry-intro">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Have questions?<br><em>Let's have a conversation.</em></h2>
+        <p class="section-body">There's no obligation and no jargon — just a warm, honest
+           conversation about where you are and where you'd like to be. We respond to all
+           enquiries within one business day.</p>
+        <div class="enquiry-reasons">
+          <div class="enquiry-reason">
+            <div class="enquiry-reason-dot" aria-hidden="true"></div>
+            <p><strong style="color:var(--text-dark);font-weight:400">Not sure where to start?</strong>
+               Share a little about your situation and we'll point you in the right direction.</p>
+          </div>
+          <div class="enquiry-reason">
+            <div class="enquiry-reason-dot" aria-hidden="true"></div>
+            <p><strong style="color:var(--text-dark);font-weight:400">Have a specific need?</strong>
+               Whether it's a Will, LPA, Trust, or business succession — describe it and we'll
+               respond with clarity.</p>
+          </div>
+          <div class="enquiry-reason">
+            <div class="enquiry-reason-dot" aria-hidden="true"></div>
+            <p><strong style="color:var(--text-dark);font-weight:400">Partnership enquiries?</strong>
+               We welcome lawyers, doctors, counsellors, and financial professionals to our
+               collaborative network.</p>
+          </div>
+          <div class="enquiry-reason">
+            <div class="enquiry-reason-dot" aria-hidden="true"></div>
+            <p><strong style="color:var(--text-dark);font-weight:400">Speaking engagements?</strong>
+               Carol is available for workshops, seminars, and corporate sessions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="enquiry-form">
+        <div class="form-title">Send an Enquiry</div>
+        <div class="form-subtitle">All fields are kept strictly confidential.</div>
+
+        <!-- form id used by JS to attach submit handler -->
+        <form id="enquiry-form-el" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="enq-first">First Name</label>
+              <input type="text" id="enq-first" name="first_name" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="enq-last">Last Name</label>
+              <input type="text" id="enq-last" name="last_name" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="enq-email">Email Address</label>
+            <input type="email" id="enq-email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="enq-phone">Phone (optional)</label>
+            <input type="tel" id="enq-phone" name="phone" placeholder="+65 0000 0000">
+          </div>
+          <div class="form-group">
+            <label for="enq-topic">Area of Interest</label>
+            <select id="enq-topic" name="topic">
+              <option value="" disabled selected>Select a topic</option>
+              <option>Will Writing</option>
+              <option>Lasting Power of Attorney</option>
+              <option>Trust Services</option>
+              <option>Succession &amp; Business Planning</option>
+              <option>Estate Planning for Divorcees</option>
+              <option>Private Wealth &amp; Family Office</option>
+              <option>Financial Clarity Check</option>
+              <option>Partnership Enquiry</option>
+              <option>Speaking Engagement</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="enq-msg">Your Message</label>
+            <textarea id="enq-msg" name="message"
+              placeholder="Tell us a little about your situation or what you'd like to know..."></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="enq-consent" name="consent" required>
+            <label for="enq-consent">I consent to The Olivet Circle contacting me regarding my
+               enquiry. My information will not be shared with third parties.
+               See our <a href="#">Privacy Policy</a>.</label>
+          </div>
+          <button type="submit" class="btn-form" id="enq-submit-btn">Send Enquiry</button>
+          <div class="form-note" id="enq-response" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     APPOINTMENT SECTION — Calendly Embed
+     Set your Calendly URL in js/main.js → SETTINGS.calendlyUrl
+============================================================ -->
+<section class="appointment" id="appointment">
+  <div class="max-w">
+    <div class="appointment-inner">
+
+      <!-- Left: Calendly widget loads here -->
+      <div class="appt-embed-wrap">
+        <div id="calendly-container">
+          <!-- Calendly widget injected by JS when scrolled into view -->
+          <div style="padding:3rem;text-align:center;color:var(--text-light);font-size:0.88rem">
+            Loading calendar…
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: info -->
+      <div class="appt-info">
+        <div class="section-label">Book an Appointment</div>
+        <h2 class="section-title">Your <em>clarity</em> begins with<br>a single conversation.</h2>
+        <p class="section-body">There's no commitment, no pressure — just an honest, confidential
+           conversation about what matters most to you and your family.</p>
+
+        <div style="margin-top:2.5rem">
+          <div class="appt-info-title">What to expect</div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">⏱</div>
+            <div>
+              <h5>60–90 Minute Sessions</h5>
+              <p>Enough time to understand your full picture, with no rushing and no jargon.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🔒</div>
+            <div>
+              <h5>Strictly Confidential</h5>
+              <p>Everything shared in your consultation is held in the strictest confidence.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🎯</div>
+            <div>
+              <h5>Personalised Guidance</h5>
+              <p>No templates, no one-size-fits-all. Your situation is unique and we treat it
+                 that way.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="consult-modes">
+          <div class="mode-badge">
+            <div class="mode-dot" aria-hidden="true"></div>
+            <span>In-Person — Singapore Office</span>
+          </div>
+          <div class="mode-badge">
+            <div class="mode-dot" aria-hidden="true"></div>
+            <span>Video Call — Zoom</span>
+          </div>
+          <div class="mode-badge">
+            <div class="mode-dot" aria-hidden="true"></div>
+            <span>Phone Call</span>
+          </div>
+        </div>
+
+        <p style="font-size:0.78rem;color:var(--text-light);margin-top:1.5rem">
+          Prefer to reach us directly?<br>
+          <a href="mailto:connect@theolivetcircle.com"
+             style="color:var(--olive-mid)">connect@theolivetcircle.com</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PARTNER WITH US
+============================================================ -->
+<section class="partner-with-us">
+  <div class="max-w">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">
+      Partner with<br><em style="color:var(--olive-pale)">The Olivet Circle.</em>
+    </h2>
+    <div class="partner-grid">
+      <div class="partner-card">
+        <h4>Clarity Beyond Complexity</h4>
+        <p>Simple steps, no jargon. We make estate planning understandable and actionable for every family.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Faith-Rooted Stewardship</h4>
+        <p>Integrity and legacy at the core — we carry forward values of reflection, continuity, and care.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Collaborative Approach</h4>
+        <p>Lawyers, doctors, counsellors, and trustees — all under one hub. We welcome new collaborators.</p>
+      </div>
+      <div class="partner-card">
+        <h4>Tailored to Life Transitions</h4>
+        <p>Young families, business owners, divorcees, caregivers — plans shaped to where you are in life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA BAND
+============================================================ -->
+<div class="cta-band">
+  <h2>Your story isn't complete<br>
+      <em style="font-family:var(--serif);font-style:italic">without the final chapter.</em></h2>
+  <p>Let's ensure your family's future is protected — with no missing pieces.</p>
+  <div class="cta-buttons">
+    <a href="#enquiry"     class="btn-primary">Send an Enquiry</a>
+    <a href="#appointment" class="btn-outline">Book a Consultation</a>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     FOOTER
+     LOGO: add <img src="images/logo.svg" ...> above the brand text
+============================================================ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="footer-brand-logo">The Olivet Circle</a>
+      <p>Integrated Estate Planning for Divorcees and Blended Families in Singapore.
+         Clarity, care, and continuity across generations.</p>
+      <a href="mailto:connect@theolivetcircle.com" class="footer-email">
+        connect@theolivetcircle.com
+      </a>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Will Writing</a></li>
+        <li><a href="#services">Lasting Power of Attorney</a></li>
+        <li><a href="#services">Trust Services</a></li>
+        <li><a href="#services">Business Succession</a></li>
+        <li><a href="#services">Estate Planning for Divorcees</a></li>
+        <li><a href="#services">Private Wealth</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#carol">Carol Chin</a></li>
+        <li><a href="#">Our Network</a></li>
+        <li><a href="#">Workshops &amp; Seminars</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#enquiry">Send an Enquiry</a></li>
+        <li><a href="#appointment">Book a Consultation</a></li>
+        <li><a href="https://www.instagram.com/theolivetcircle" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 The Olivet Circle. All rights reserved.</span>
+    <span>Estate &amp; Succession Planning · Singapore</span>
+  </div>
+</footer>
+
+
+<!-- JS loaded last -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
